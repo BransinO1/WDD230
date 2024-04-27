@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corbin Meacham - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Corbin Meacham's course assignment portal for WDD 230 - Web Frontend Development. Get resources, updates, and more.">
+    <meta name="author" content="Corbin Meacham">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* CSS for small screens */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        /* CSS for large screens */
+        @media screen and (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: 2fr 1fr; /* Learning Activities card twice as wide */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Profile Image">
+        <span>Corbin Meacham</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main class="grid-container">
+        <div class="header">
+            <h1>WDD 230: Web Frontend Development</h1>
+            <hr> <!-- Horizontal line below the header -->
+        </div>
+        <div class="left-column">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><strong>Week 01:</strong> <a href="https://bransino1.github.io/wdd230/week01/holygrail.html.html">Layout</a> | <a href="https://bransino1.github.io/wdd230/week01/media-query.html">Media Query</a> | <a href="https://codepen.io/Corbin-Meacham/pen/wvZRmRJ">JS Pen</a></li>
+                <li><strong>Week 02:</strong> <a href="week02.html">Week 02</a></li>
+                <li><strong>Week 03:</strong> <a href="week03.html">Week 03</a></li>
+                <li><strong>Week 04:</strong> <a href="week04.html">Week 04</a></li>
+                <li><strong>Week 05:</strong> <a href="week05.html">Week 05</a></li>
+                <li><strong>Week 06:</strong> <a href="week06.html">Week 06</a></li>
+            </ul>
+        </div>
+        <div class="right-column">
+            <h2>Information</h2>
+            <p> Placeholder Text line 1</p>
+            <p> Placeholder Text line 2</p>
+            <p> Placeholder Text line 3</p>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright">&copy; <span id="currentYear"></span> Corbin Meacham, Boise, Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script>
+        // Function to get the current year and populate the copyright notice
+        function getCurrentYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').innerText = currentYear;
+        }
+
+        // Function to get the last modified date of the document and populate the "lastModified" paragraph
+        function getLastModifiedDate() {
+            const lastModified = document.lastModified;
+            document.getElementById('lastModified').innerText = `Last modified: ${lastModified}`;
+        }
+
+        // Call the functions when the page loads
+        window.onload = function() {
+            getCurrentYear();
+            getLastModifiedDate();
+        };
+    </script>
+</body>
+</html>

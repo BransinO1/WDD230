@@ -1,0 +1,137 @@
+/* Controls Basic CSS */
+
+/* Base CSS */
+
+/* Color Scheme */
+:root {
+    --primary-color: #2c3e50; /* Dark blue */
+    --secondary-color: #34495e; /* Dark blue-gray */
+    --accent-color: #1692a8; /* Light blue*/
+    --text-color: #333; /* Dark gray */
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    color: var(--text-color);
+    background-color: #f0f4f8; /* Light blue-gray background */
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif; /* Google Font */
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center header content */
+    font-size: 35px;
+}
+
+header img {
+    width: 200px; /* Adjust the width here */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add margin to the right */
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* For mobile view (base.css) */
+@media screen and (max-width: 767px) {
+    /* Navigation */
+    nav {
+        background-color: var(--secondary-color); /* Set background color */
+        padding: 10px; /* Add padding */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none; /* Remove default list style */
+        padding: 0; /* Remove default padding */
+        margin-bottom: 5px; /* Add margin to bottom */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add margin between items */
+    }
+
+    nav ul li a {
+        color: #fff; /* Set text color */
+        text-decoration: none; /* Remove underline */
+        padding: 5px 10px; /* Add padding */
+        border-radius: 5px; /* Add rounded corners */
+    }
+
+    /* Change background color when hovering over navigation links */
+    nav ul li:hover a {
+        background-color: var(--accent-color); /* Change background color on hover */
+        color: #fff; /* Change text color to improve contrast */
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 20px; /* Gap between items */
+    border: 2px solid var(--primary-color); /* Add a border */
+    padding: 20px; /* Add padding inside the border */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.header {
+    grid-column: 1; /* Span across one column */
+}
+
+.header h1 {
+    margin: 3;
+    padding-left: 25px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.header hr {
+    border: none; /* Remove default border */
+    border-bottom: 2px solid var(--primary-color); /* Add custom border */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for colored headers */
+.left-column h2, .right-column h2 {
+    background-color: var(--accent-color); /* Apply accent color as background */
+    color: #fff; /* Set text color to white for better contrast */
+    text-align: center;
+}
+
+/* Styling for bullet points on the left side */
+.left-column ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 25px; /* Add padding to align bullets */
+}
+
+/* Styling for centered plain text on the right side */
+.right-column p {
+    text-align: center; /* Center-align text */
+    font-style: italic; /* Apply italic style to the text */
+}
