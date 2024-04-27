@@ -1,0 +1,63 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 25px;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #007bff;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #007bff;
+    text-align: center
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Site Name section */
+#site-name {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Site Purpose section */
+#site-purpose ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Scenarios section */
+#scenarios ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* Color Schema section */
+#color-schema p {
+    margin-bottom: 10px;
+}
+
+/* Typography section */
+#typography p {
+    margin-bottom: 10px;
+}
+
+/* Wireframe section */
+#wireframe p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+}
