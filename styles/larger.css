@@ -5,7 +5,6 @@
 :root {
     --primary-color: #2c3e50; /* Dark blue */
     --secondary-color: #34495e; /* Dark blue-gray */
-    --accent-color: #1692a8; /* Light blue*/
     --text-color: #333; /* Dark gray */
 }
 
@@ -18,16 +17,6 @@ body {
 
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif; /* Google Font */
-}
-
-/* Links */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent-color);
 }
 
 /* Header */
@@ -53,35 +42,6 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-/* Navigation */
-nav {
-    background-color: var(--secondary-color); /* Set background color */
-    padding: 10px; /* Add padding */
-}
-
-nav ul {
-    display: flex; /* Use flexbox */
-    justify-content: space-evenly; /* Evenly distribute items */
-    list-style: none; /* Remove default list style */
-    padding: 0; /* Remove default padding */
-}
-
-nav ul li {
-    margin: 0 10px; /* Add margin between items */
-}
-
-nav ul li a {
-    color: #fff; /* Set text color */
-    text-decoration: none; /* Remove underline */
-    padding: 5px 10px; /* Add padding */
-    border-radius: 5px; /* Add rounded corners */
-}
-
-nav ul li:hover a {
-    background-color: var(--accent-color); /* Change background color on hover */
-    color: #fff; /* Change text color to improve contrast */
 }
 
 /* Grid-Container or Main Styling */
@@ -118,7 +78,7 @@ nav ul li:hover a {
 
 /* Styling for colored headers */
 .card h2 {
-    background-color: var(--accent-color); /* Apply accent color as background */
+    background-color: var(--primary-color); /* Apply accent color as background */
     color: #fff; /* Set text color to white for better contrast */
     padding: 10px; /* Add padding for better spacing */
     border-radius: 5px; /* Add rounded corners for visual appeal */
@@ -136,5 +96,21 @@ nav ul li:hover a {
 .card p {
     text-align: center; /* Center-align text */
     font-style: italic; /* Apply italic style to the text */
+}
+
+/* Navigation */
+#myButton {
+    display: none;
+}
+
+.menuLinks {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 2vw;
+}
+
+.menuLinks a {
+    display: block;
+    flex: 1 1 100%;
 }
 }

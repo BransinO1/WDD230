@@ -6,7 +6,6 @@
 :root {
     --primary-color: #2c3e50; /* Dark blue */
     --secondary-color: #34495e; /* Dark blue-gray */
-    --accent-color: #1692a8; /* Light blue*/
     --text-color: #333; /* Dark gray */
 }
 
@@ -21,16 +20,6 @@ h1, h2, h3 {
     font-family: 'Open Sans', sans-serif; /* Google Font */
 }
 
-/* Links */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent-color);
-}
-
 /* Header */
 header {
     background-color: var(--primary-color);
@@ -40,6 +29,7 @@ header {
     align-items: center;
     justify-content: center; /* Center header content */
     font-size: 35px;
+    position: relative; /* Ensure relative positioning for child elements */
 }
 
 header img {
@@ -54,36 +44,6 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-/* Navigation */
-nav {
-    background-color: var(--secondary-color); /* Set background color */
-    padding: 10px; /* Add padding */
-}
-
-nav ul {
-    list-style: none; /* Remove default list style */
-    padding: 0; /* Remove default padding */
-}
-
-nav ul li {
-    margin-bottom: 10px; /* Add margin between items */
-}
-
-nav ul li a {
-    display: block; /* Change to block level */
-    color: #fff; /* Set text color */
-    text-decoration: none; /* Remove underline */
-    padding: 5px 10px; /* Add padding */
-    border-radius: 5px; /* Add rounded corners */
-    background-color: var(--secondary-color); /* Match background color */
-    text-align: center;
-}
-
-nav ul li:hover a {
-    background-color: var(--accent-color); /* Change background color on hover */
-    color: #fff; /* Change text color to improve contrast */
 }
 
 /* Grid-Container or Main Styling */
@@ -111,7 +71,7 @@ nav ul li:hover a {
 
 /* Styling for colored headers */
 .card h2 {
-    background-color: var(--accent-color); /* Apply accent color as background */
+    background-color: var(--primary-color); /* Apply accent color as background */
     color: #fff; /* Set text color to white for better contrast */
     text-align: center;
 }
@@ -126,4 +86,74 @@ nav ul li:hover a {
 .card p {
     text-align: center; /* Center-align text */
     font-style: italic; /* Apply italic style to the text */
+}
+
+/* Navigation */
+#myButton {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+    top: 23.5rem;
+    right: 1rem;
+	cursor: pointer; /* Change cursor style */
+}
+
+
+#myButton::before {
+	content: "☰";
+}
+
+#myButton.open::before {
+	content: "X";
+}
+
+.menuLinks {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2vw;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+}
+
+.menuLinks a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.menuLinks a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+#darkModeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#darkModeButton:hover {
+    cursor: pointer; /* Change cursor style on hover */
+}
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
 }
