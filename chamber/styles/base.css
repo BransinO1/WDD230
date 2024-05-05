@@ -1,0 +1,179 @@
+/* Controls Basic CSS */
+
+/* Base CSS */
+
+/* Color Scheme */
+:root {
+    --primary-color: #2c3e50; /* Dark blue */
+    --secondary-color: #34495e; /* Dark blue-gray */
+    --text-color: #333; /* Dark gray */
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    color: var(--text-color);
+    background-color: #f0f4f8; /* Light blue-gray background */
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif; /* Google Font */
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center header content */
+    font-size: 25px; /* Decreased font size */
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+.header-image {
+    width: 50px; /* Adjust the width here */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero {
+    position: relative; /* Set position to relative to contain absolute positioned content */
+    height: 100vh; /* Set height to full viewport height */
+    background-image: url('https://c2.staticflickr.com/4/3692/10444291993_759f6d705f_b.jpg'); /* Set background image */
+    background-size: cover; /* Scale the image to cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.hero-content {
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Place content vertically at 50% from the top */
+    left: 50%; /* Place content horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Center the content using translate */
+    text-align: center; /* Center align the text */
+    color: white; /* Set text color */
+}
+
+.hero-content h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add some space below the paragraph */
+}
+
+.hero-content .btn {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove border */
+    background-color: var(--primary-color); /* Use primary color for the button background */
+    color: white; /* Use white color for the button text */
+    text-decoration: none; /* Remove default underline */
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Navigation */
+#myButton {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+    top: 23.5rem;
+    right: 1rem;
+	cursor: pointer; /* Change cursor style */
+}
+
+
+#myButton::before {
+	content: "☰";
+}
+
+#myButton.open::before {
+	content: "X";
+}
+
+.menuLinks {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2vw;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+}
+
+.menuLinks a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.menuLinks a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+#darkModeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#darkModeButton:hover {
+    cursor: pointer; /* Change cursor style on hover */
+}
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Center all sections */
+section {
+    text-align: center;
+}
+
+/* Center specific sections */
+.call-to-action,
+.current-events,
+.weather-card,
+.spotlights {
+    margin: 0 auto; /* Center horizontally */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    text-align: center; /* Reset text alignment to center */
+}
+
+/* Center the headings */
+.call-to-action h2,
+.current-events h2,
+.weather-card h2,
+.spotlights h2 {
+    text-align: center;
+}

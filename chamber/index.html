@@ -1,0 +1,101 @@
+<!-- Homepage for the Chamber Website - 2nd index page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corbin Meachams Boise Chamber of Commerce">
+    <meta property="og:title" content="Boise, Idaho Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://c2.staticflickr.com/4/3692/10444291993_759f6d705f_b.jpg">
+    <meta property="og:url" content="https://bransino1.github.io/wdd230/chamber">
+    <title>Boise, Idaho Chamber of Commerce Project</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <button id="darkModeButton"></button>
+        <img src="images/favicon.ico" alt="Favicon">
+        <h1>Welcome to the Boise Chamber of Commerce</h1>
+        <div class="social-links">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+    </header>
+    <nav id="animateme">
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- <section class="hero">
+            <img src="https://c2.staticflickr.com/4/3692/10444291993_759f6d705f_b.jpg" alt="Hero Image">
+        </section> -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to the Boise Chamber of Commerce</h2>
+                <p>Join our thriving business community.</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Join Our Chamber Today!</h2>
+            <p>Be a part of our thriving business community.</p>
+            <a href="#" class="btn">Join Now - Click Here or Contact Us Below</a>
+        </section>
+
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <p> Event 1</p>
+            <p> Event 2</p>
+            <p> Event 3</p>
+        </section>
+
+        <section class="weather-card">
+            <h2>Weather Forecast</h2>
+            <p>Placeholder for weather information.</p>
+        </section>
+
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <h3>Company 1</h3>
+                <p>Placeholder for company information.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company 2</h3>
+                <p>Placeholder for company information.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company 3</h3>
+                <p>Placeholder for company information.</p>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/mobileMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: boisecommerce@usa.gov</p>
+            <p>Phone: 208-861-1557</p>
+        </div>
+        
+        <!-- Development information -->
+        <div class="development-info">
+            <h3>Development Information</h3>
+            <p>Developer: Corbin Meacham</p>
+            <p>Course: WDD 230</p>
+            <p>&copy; <span id="currentYear"></span> <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
