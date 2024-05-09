@@ -22,20 +22,32 @@
     </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Profile Image">
+        <img src="images/profile.webp" alt="Profile Image">
         <span>Corbin Meacham</span>
         <button id="darkModeButton"></button>
     </header>
     <nav id="animateme">
         <button id="myButton"></button>
         <ul class="menuLinks">
-            <li><a href="#">Home</a></li>
+            <li><a href="https://bransino1.github.io/wdd230">Home</a></li>
             <li><a href="https://bransino1.github.io/wdd230/chamber/">Chamber</a></li>
             <li><a href="https://bransino1.github.io/wdd230//week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
     <main class="grid-container">
+
+        <div class="hero-image">
+            <picture>
+                <!-- Mobile view image up to 400px -->
+                <source media="(max-width: 400px)" srcset="images/boisetemple_mobile.webp">
+                <!-- Larger view image up to 960px -->
+                <source media="(min-width: 401px) and (max-width: 960px)" srcset="images/boisetemple_landscape.webp">
+                <!-- Default Photo Image to load -->
+                <img src="images/boisetemple_mobile.webp" alt="Boise Idaho Temple">
+            </picture>
+        </div>
+
         <div class="wdd-header">
             <h1>WDD 230: Web Frontend Development</h1>
         </div>
@@ -46,7 +58,7 @@
                 <ul>
                     <li><strong>Week 01:</strong> <a href="https://bransino1.github.io/wdd230/week01/holygrail.html">Layout</a> | <a href="https://bransino1.github.io/wdd230/week01/media-query.html">Media Query</a> | <a href="https://codepen.io/Corbin-Meacham/pen/wvZRmRJ">JS Pen</a></li>
                     <li><strong>Week 02:</strong> <a href="https://bransino1.github.io/wdd230/week02/design.html">Design</a> | <a href="https://codepen.io/Corbin-Meacham/pen/BaEgLdB">JS Pen</a> | <a href="https://bransino1.github.io/wdd230/week02/bom.html">Bom Top 10</a></li>
-                    <li><strong>Week 03:</strong> <a href="week03.html">Week 03</a></li>
+                    <li><strong>Week 03:</strong> <a href="https://bransino1.github.io/wdd230/week03/images/landscape.webp">WebP</a> | <a href="https://bransino1.github.io/wdd230/week03/lazyload.html">LazyLoad</a> | <a href="https://bransino1.github.io/wdd230/week03/responsive-images.html">Responsive Images</a> | <a href="https://bransino1.github.io/wdd230/week03/bom.html">New Bom Top 10</a></li>
                     <li><strong>Week 04:</strong> <a href="week04.html">Week 04</a></li>
                     <li><strong>Week 05:</strong> <a href="week05.html">Week 05</a></li>
                     <li><strong>Week 06:</strong> <a href="week06.html">Week 06</a></li>
@@ -60,12 +72,15 @@
                 <p> Placeholder Text line 1</p>
                 <p> Placeholder Text line 2</p>
                 <p> Placeholder Text line 3</p>
+                <p>Page Visits: <span id="pageVisitCounter">0</span></p>
             </section>
         </div>
     </main>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/mobileMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageVisit.js"></script>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77742.36657427052!2d-116.31416800302391!3d43.60408498672783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1715280652617!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p id="copyright">&copy; <span id="currentYear"></span> Corbin Meacham, Boise, Idaho</p>
         <p id="lastModified"></p>

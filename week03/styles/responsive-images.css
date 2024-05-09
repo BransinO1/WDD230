@@ -1,0 +1,5 @@
+/* CSS for responsive behavior on the image */
+.hero img {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Set the height to auto */
+}

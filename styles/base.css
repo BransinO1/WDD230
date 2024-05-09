@@ -157,3 +157,27 @@ a {
 a:hover {
     color: var(--primary-color);
 }
+
+/* CSS for positioning the overlay div and preventing text wrapping */
+.hero-image {
+    position: relative; /* Ensure positioning context for overlay */
+    overflow: hidden; /* Hide overflow to prevent text wrapping */
+}
+
+.overlay {
+    position: absolute; /* Position the overlay absolutely */
+    top: 0; /* Position from the top of the hero image */
+    left: 0; /* Position from the left of the hero image */
+    width: 100%; /* Make the overlay cover the entire hero image */
+    height: 100%; /* Make the overlay cover the entire hero image */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding for better readability */
+    box-sizing: border-box; /* Include padding in the overlay's dimensions */
+}
+
+.overlay h2 {
+    margin: 0; /* Remove default margin for better alignment */
+    line-height: 1.5; /* Set line height to avoid text overlap */
+}

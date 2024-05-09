@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corbin Meacham Responsive-Images</title>
+</head>
+<body>
+<main>
+    <div class="hero">
+        <picture>
+            <!-- Small Image Source -->
+            <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+            <!-- Medium Image Source -->
+            <source media="(min-width: 501px) and (max-width: 1000px)" srcset="images/hero-medium.webp">
+            <!-- Large Image Source / Default Image -->
+            <img src="images/hero-large.webp" alt="Description of the image" width="1000" height="500">
+        </picture>
+    </div>
+</main>
+</body>
+</html>
