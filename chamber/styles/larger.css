@@ -89,7 +89,7 @@ footer {
 }
 
 #darkModeButton:hover {
-    cursor: pointer; /* Change cursor style on hover */
+    cursor: pointer;
 }
 
 /* Navigation */
@@ -140,20 +140,14 @@ section {
 .current-events ul li {
     text-align: left; /* Reset text alignment for list items to left */
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Sidebar takes 1/3 and main content takes 2/3 of the width */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Increase specificity for .image-container */
+.container .image-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+}
+}

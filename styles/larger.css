@@ -44,6 +44,7 @@ footer {
     text-align: center;
 }
 
+
 /* Grid-Container or Main Styling */
 .grid-container {
     display: grid;
@@ -53,6 +54,18 @@ footer {
         "wdd-header wdd-header"
         "learning-activities information"; /* Define grid areas */
     align-items: stretch; /* Ensure all items stretch to fill the container */
+}
+
+.wdd-header {
+    grid-area: wdd-header;
+}
+
+.learning-activities {
+    grid-area: learning-activities;
+}
+
+.information {
+    grid-area: information;
 }
 
 .wdd-header {
@@ -89,7 +102,7 @@ footer {
 .card ul {
     list-style-type: disc; /* Use disc bullets */
     padding-left: 35px; /* Add padding to align bullets */
-    line-height: 1.68; /* Increase line height to add space between lines */
+    line-height: 2.37; /* Increase line height to add space between lines */
 }
 
 /* Styling for centered plain text on the right side */

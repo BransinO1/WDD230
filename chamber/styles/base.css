@@ -85,17 +85,21 @@ footer {
 
 
 /* Navigation */
-#myButton {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
- 	position: absolute;
-    top: 23.5rem;
-    right: 1rem;
-	cursor: pointer; /* Change cursor style */
+#animateme {
+    position: relative; /* Position the parent nav element */
 }
 
+#myButton {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute; /* Position the button relative to the parent nav */
+    top: 50%; /* Move the button 50% down from the top of the parent */
+    right: 1rem;
+    transform: translateY(-50%); /* Center the button vertically */
+    cursor: pointer; /* Change cursor style */
+}
 
 #myButton::before {
 	content: "☰";
@@ -176,4 +180,32 @@ section {
 .weather-card h2,
 .spotlights h2 {
     text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minimum width as needed */
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    text-align: left;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 1rem;
 }

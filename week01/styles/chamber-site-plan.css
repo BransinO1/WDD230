@@ -10,11 +10,11 @@ body {
 
 h1 {
     font-family: 'Open Sans', sans-serif;
-    color: #007bff;
+    color: #00244b;
 }
 h2 {
     font-family: 'Open Sans', sans-serif;
-    color: #007bff;
+    color: #00244b;
     text-align: center
 }
 
@@ -58,6 +58,6 @@ section {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #007bff;
+    background-color: #00244b;
     color: #fff;
 }

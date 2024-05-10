@@ -89,15 +89,20 @@ footer {
 }
 
 /* Navigation */
+#animateme {
+    position: relative; /* Position the parent nav element */
+}
+
 #myButton {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
- 	position: absolute;
-    top: 23.5rem;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute; /* Position the button relative to the parent nav */
+    top: 50%; /* Move the button 50% down from the top of the parent */
     right: 1rem;
-	cursor: pointer; /* Change cursor style */
+    transform: translateY(-50%); /* Center the button vertically */
+    cursor: pointer; /* Change cursor style */
 }
 
 
