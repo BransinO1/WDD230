@@ -141,7 +141,7 @@ section {
     text-align: left; /* Reset text alignment for list items to left */
 }
 
-.container {
+.main .container {
     display: grid;
     grid-template-columns: 1fr; /* By default, use one column */
     gap: 20px; /* Adjust the gap between columns */

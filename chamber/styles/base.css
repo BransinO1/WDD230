@@ -195,7 +195,7 @@ section {
 }
 
 .image-container img {
-    max-width: 100%; /* Ensure images don't exceed their container's width */
+    max-width:100%; /* Ensure images don't exceed their container's width */
 }
 
 figure {
