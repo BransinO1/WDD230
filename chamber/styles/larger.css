@@ -141,10 +141,21 @@ section {
     text-align: left; /* Reset text alignment for list items to left */
 }
 
-.main .container {
+
+
+
+.container {
     display: grid;
-    grid-template-columns: 1fr; /* By default, use one column */
+    grid-template-columns: 1fr 1fr; /* Two columns */
     gap: 20px; /* Adjust the gap between columns */
+}
+
+.sidebar {
+    grid-column: 1; /* Sidebar appears in the first column */
+}
+
+.main {
+    grid-column: 2; /* Main content appears in the second column */
 }
 
 .main .image-container {
