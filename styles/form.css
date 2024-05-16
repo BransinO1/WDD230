@@ -30,9 +30,9 @@ body.dark-mode label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"],
+input[type="tel"],
 textarea,
-button[type="submit"] {
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -41,12 +41,7 @@ button[type="submit"] {
     box-sizing: border-box;
 }
 
-input[type="range"] {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-button[type="submit"] {
+input[type="submit"] {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
@@ -55,6 +50,6 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #0056b3; /* Darker shade of primary color */
 }

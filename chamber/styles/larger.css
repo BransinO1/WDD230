@@ -141,9 +141,6 @@ section {
     text-align: left; /* Reset text alignment for list items to left */
 }
 
-
-
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns */
