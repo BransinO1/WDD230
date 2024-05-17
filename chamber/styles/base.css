@@ -282,12 +282,12 @@ form {
 /* Adjust text color for form labels */
 label {
     display: block;
+    text-align: left;
     margin-bottom: 10px;
     color: #000;
 }
 
-label[for="firstName"],
-label[for="organization"] {
+label[for="firstName"] {
     padding-top: 30px;
 }
 
@@ -315,6 +315,7 @@ input[type="submit"] {
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 

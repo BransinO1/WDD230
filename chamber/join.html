@@ -86,8 +86,9 @@
                 
                 <!-- Applicant's Title or Position -->
                 <label for="title">Title/Position:
-                    <input type="text" id="title" name="title" pattern="[A-Za-z-\s]{7,}" title="Only alphabetic characters, hyphens, and spaces allowed. Minimum 7 characters.">
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" title="Only alphabetic characters, hyphens, and spaces allowed. Minimum 7 characters.">
                 </label>
+                
                 
                 <!-- Email Address -->
                 <label for="email">Email*:
@@ -99,6 +100,16 @@
                     <input type="tel" id="phone" name="phone" required placeholder="5552228877">
                 </label>
                 
+                <!-- Business/Organization Name -->
+                <label for="organization">Organization*:
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+
+                <!-- Business/Organization Description -->
+                <label for="description">Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+
                 <!-- Membership Level Selection -->
                 <fieldset>
                     <legend>Membership Level:</legend>
@@ -119,16 +130,6 @@
                         Gold Membership
                     </label><br>
                 </fieldset>
-
-                <!-- Business/Organization Name -->
-                <label for="organization">Organization*:
-                    <input type="text" id="organization" name="organization" required>
-                </label>
-
-                <!-- Business/Organization Description -->
-                <label for="description">Organization Description:
-                    <textarea id="description" name="description"></textarea>
-                </label>
                 
                 <!-- Timestamp (Hidden) -->
                 <input type="hidden" id="timestamp" name="timestamp" value="">
