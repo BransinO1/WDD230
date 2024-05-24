@@ -25,7 +25,7 @@ const displayLinks = (weeks) => {
         week.links.forEach((link) => {
             const listItem = document.createElement('li');
             const anchor = document.createElement('a');
-            anchor.href = `${baseURL}/${link.url}`;
+            anchor.href = link.url;
             anchor.textContent = link.title;
             listItem.appendChild(anchor);
             linksList.appendChild(listItem);
