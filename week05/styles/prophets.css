@@ -1,0 +1,76 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background for the screen */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #fff;
+    color: rgb(77, 7, 238);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 columns */
+    gap: 1rem;
+    justify-items: center;
+    background-color: #d6d0d0; /* Background color for cards */
+    padding: 10rem; /* Default padding */
+
+    /* Media query for mobile view */
+    @media (max-width: 768px) {
+        padding: 1rem; /* Change padding for mobile view */
+    }
+}
+  
+  .card {
+    background-color: rgb(184, 184, 218);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black; /* Text color for card content */
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(77, 7, 238);
+  }
+  
+  .card p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  

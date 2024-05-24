@@ -186,8 +186,14 @@ a:hover {
     margin: 0;
 }
 
+.weather-info {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center align horizontally */
+    text-align: center; /* Center align text */
+}
 
-
-
-
-
+.weather-info img {
+    width: 30px; /* Adjust size as needed */
+    margin-right: 10px; /* Add spacing between the icon and text */
+}

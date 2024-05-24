@@ -1,0 +1,33 @@
+{
+    "familyName": "Meacham",
+    "dateMovedIn": "2023-05-01",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Darryl Meacham",
+        "gender": "Male",
+        "birthdate": "1980-04-23"
+      },
+      {
+        "name": "Tonya Meacham",
+        "gender": "Female",
+        "birthdate": "1982-11-16"
+      },
+      {
+        "name": "Corbin Meacham",
+        "gender": "Male",
+        "birthdate": "2001-08-30"
+      },
+      {
+        "name": "Victoria Meacham",
+        "gender": "Female",
+        "birthdate": "2005-03-22"
+      },
+      {
+        "name": "Alana Meacham",
+        "gender": "Female",
+        "birthdate": "2008-03-22"
+      }
+    ]
+  }
