@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Directory - Corbin Meacham - WDD 230</title>
+    <meta name="description" content="Member directory for Corbin Meacham's course assignment in WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Corbin Meacham">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta property="og:title" content="Corbin Meacham's Member Directory for WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://c2.staticflickr.com/4/3692/10444291993_759f6d705f_b.jpg" />
+    <meta property="og:url" content="https://bransino1.github.io/wdd230/directory.html" />        
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Profile Image">
+        <span>Corbin Meacham</span>
+        <button id="darkModeButton"></button>
+    </header>
+    <nav id="animateme">
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li><a href="https://bransino1.github.io/wdd230">Home</a></li>
+            <li><a href="https://bransino1.github.io/wdd230/chamber/">Chamber</a></li>
+            <li><a href="https://bransino1.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="https://bransino1.github.io/wdd230/form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main class="grid-container">
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <div id="member-directory" class="grid-view"></div>
+    </main>
+    <footer>
+        <p id="copyright">&copy; <span id="currentYear"></span> Corbin Meacham, Boise, Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/mobileMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>

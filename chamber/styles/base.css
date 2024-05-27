@@ -322,3 +322,28 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3; /* Darker shade of primary color */
 }
+
+/* Week 05 membership directory */
+#member-directory.grid-view .member {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#member-directory.list-view .member {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.member img {
+    max-width: 100px;
+    display: block;
+    margin-bottom: 10px;
+}

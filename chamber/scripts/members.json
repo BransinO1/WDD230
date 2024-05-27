@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Company One",
+        "address": "111 Firewalker St, Twin Falls, USA",
+        "phone": "111-1234",
+        "website": "http://www.companyone.com",
+        "image": "company1.png",
+        "membershipLevel": "NP",
+        "otherInfo": "Specializes in software development"
+    },
+    {
+        "name": "Company Two",
+        "address": "222 Mining Dr, Pocatello, USA",
+        "phone": "222-1234",
+        "website": "http://www.companytwo.com",
+        "image": "company2.png",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Expert in digital marketing"
+    },
+    {
+        "name": "Company Three",
+        "address": "333 Maple St, Eagle, USA",
+        "phone": "333-1234",
+        "website": "http://www.companythree.com",
+        "image": "company3.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "Experts in Computer Technology"
+    },
+    {
+        "name": "Company Four",
+        "address": "444 Treeline Ave, Meridian, USA",
+        "phone": "444-1234",
+        "website": "http://www.companyfour.com",
+        "image": "company4.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Coding Professionals"
+    },
+    {
+        "name": "Company Five",
+        "address": "555 Elm St, Idaho Falls, USA",
+        "phone": "555-1234",
+        "website": "http://www.companyfive.com",
+        "image": "company5.png",
+        "membershipLevel": "NP",
+        "otherInfo": "Software Development Legends"
+    },
+    {
+        "name": "Company Six",
+        "address": "666 Caveman Ave, Kuna, USA",
+        "phone": "666-1234",
+        "website": "http://www.companysix.com",
+        "image": "company6.png",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Website Design Professionals"
+    },
+    {
+        "name": "Company Seven",
+        "address": "777 Rexburg St, Rexburg, USA",
+        "phone": "777-1234",
+        "website": "http://www.companyseven.com",
+        "image": "company7.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "Cybersecurity Experts"
+    },
+    {
+        "name": "Company Eight",
+        "address": "888 Boise Ave, Boise, USA",
+        "phone": "888-1234",
+        "website": "http://www.companyeight.com",
+        "image": "company8.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "IT Technicians"
+    }
+]
