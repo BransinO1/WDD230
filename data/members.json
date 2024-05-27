@@ -58,17 +58,8 @@
         "address": "777 Rexburg St, Rexburg, USA",
         "phone": "777-1234",
         "website": "http://www.companyseven.com",
-        "image": "company7.png",
+        "image": "company7.jpg",
         "membershipLevel": "Silver",
         "otherInfo": "Cybersecurity Experts"
-    },
-    {
-        "name": "Company Eight",
-        "address": "888 Boise Ave, Boise, USA",
-        "phone": "888-1234",
-        "website": "http://www.companyeight.com",
-        "image": "company8.jpg",
-        "membershipLevel": "Gold",
-        "otherInfo": "IT Technicians"
     }
 ]
