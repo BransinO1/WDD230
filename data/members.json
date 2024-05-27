@@ -13,7 +13,7 @@
         "address": "222 Mining Dr, Pocatello, USA",
         "phone": "222-1234",
         "website": "http://www.companytwo.com",
-        "image": "company2.png",
+        "image": "company2.jpg",
         "membershipLevel": "Bronze",
         "otherInfo": "Expert in digital marketing"
     },
@@ -22,7 +22,7 @@
         "address": "333 Maple St, Eagle, USA",
         "phone": "333-1234",
         "website": "http://www.companythree.com",
-        "image": "company3.png",
+        "image": "company3.jpg",
         "membershipLevel": "Silver",
         "otherInfo": "Experts in Computer Technology"
     },
@@ -31,7 +31,7 @@
         "address": "444 Treeline Ave, Meridian, USA",
         "phone": "444-1234",
         "website": "http://www.companyfour.com",
-        "image": "company4.png",
+        "image": "company4.jpg",
         "membershipLevel": "Gold",
         "otherInfo": "Coding Professionals"
     },
@@ -40,7 +40,7 @@
         "address": "555 Elm St, Idaho Falls, USA",
         "phone": "555-1234",
         "website": "http://www.companyfive.com",
-        "image": "company5.png",
+        "image": "company5.jpg",
         "membershipLevel": "NP",
         "otherInfo": "Software Development Legends"
     },
@@ -49,7 +49,7 @@
         "address": "666 Caveman Ave, Kuna, USA",
         "phone": "666-1234",
         "website": "http://www.companysix.com",
-        "image": "company6.png",
+        "image": "company6.jpg",
         "membershipLevel": "Bronze",
         "otherInfo": "Website Design Professionals"
     },
@@ -67,7 +67,7 @@
         "address": "888 Boise Ave, Boise, USA",
         "phone": "888-1234",
         "website": "http://www.companyeight.com",
-        "image": "company8.png",
+        "image": "company8.jpg",
         "membershipLevel": "Gold",
         "otherInfo": "IT Technicians"
     }
