@@ -82,14 +82,13 @@
             <section class="card" id="weatherInfo">
                 <h2>Weather Information</h2>
                 <p>Loading...</p>
-            </section>
-            <section class="card" id="spotlights">
-                <h2>Member Spotlights</h2>
-                <div id="spotlightMembers">
-                    <!-- Spotlight members will be populated here -->
-                </div>
-            </section>
         </div>
+        <section class="card" id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-container">
+                <!-- Spotlight members will be populated here -->
+            </div>
+        </section>
     </main>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/mobileMenu.js"></script>
@@ -103,6 +102,7 @@
     <footer>
         <p id="copyright">&copy; <span id="currentYear"></span> Corbin Meacham, Boise, Idaho</p>
         <p id="lastModified"></p>
+        <p>Page visits: <span id="pageVisitCounter"></span></p>
     </footer>
 </body>
 </html>
