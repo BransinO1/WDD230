@@ -21,6 +21,9 @@
         <meta property="og:url" content="https://bransino1.github.io/wdd230" />        
     </head>
 <body>
+    <div id="banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.! <button id="closeBanner">Close</button></p>
+    </div>
     <header>
         <img src="images/profile.webp" alt="Profile Image">
         <span>Corbin Meacham</span>
@@ -80,6 +83,12 @@
                 <h2>Weather Information</h2>
                 <p>Loading...</p>
             </section>
+            <section class="card" id="spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="spotlightMembers">
+                    <!-- Spotlight members will be populated here -->
+                </div>
+            </section>
         </div>
     </main>
     <script src="scripts/getDates.js"></script>
@@ -88,6 +97,8 @@
     <script src="scripts/pageVisit.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/banner.js"></script>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77742.36657427052!2d-116.31416800302391!3d43.60408498672783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1715280652617!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p id="copyright">&copy; <span id="currentYear"></span> Corbin Meacham, Boise, Idaho</p>

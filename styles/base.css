@@ -188,12 +188,81 @@ a:hover {
 
 .weather-info {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center align horizontally */
-    text-align: center; /* Center align text */
+    align-items: center;
 }
 
 .weather-info img {
-    width: 30px; /* Adjust size as needed */
-    margin-right: 10px; /* Add spacing between the icon and text */
+    margin-right: 10px;
+}
+
+.forecast {
+    margin-top: 20px;
+}
+
+.forecast-day {
+    margin-bottom: 10px;
+}
+
+.forecast-info {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.forecast-info img {
+    margin-right: 10px;
+}
+
+.forecast-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast-info p {
+    margin: 0;
+}
+
+.spotlight-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.spotlight-member {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+.spotlight-member img {
+    max-width: 100%;
+    height: auto;
+}
+
+.spotlight-member h3 {
+    margin: 10px 0;
+}
+
+.spotlight-member p {
+    margin: 5px 0;
+}
+
+.banner {
+    display: none;
+    background-color: rgb(255, 255, 255); /* Yellow color */
+    padding: 10px;
+    text-align: center;
+}
+
+.banner p {
+    margin: 0;
+}
+
+.banner button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
 }
